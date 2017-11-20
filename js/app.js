@@ -7,8 +7,7 @@ var count = document.getElementById('count');
 btn.addEventListener('click', function(event){
   area.focus();
   
-  if(area.value) {
- 
+  if(area.value) { 
     var li = document.createElement('li');
     var txt = document.createElement('p');
 
@@ -16,8 +15,14 @@ btn.addEventListener('click', function(event){
     
     li.appendChild(txt);
     lista.appendChild(li);
-
-    area.value = '';   
+    
+    //Limpia la Caja de Texto
+    area.value = ''; 
   }
+  //event.target.disabled = false;  
 });
+
+
+
+
 

@@ -16,18 +16,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 /*clases específicas*/
 #nav {
@@ -58,15 +46,19 @@ section {
 
 .box-right {
   background-color: #5FCBDF;
-  margin: -7% 10% 0% 50%;
-  height: 100px;
-  width: 400px; 
+  margin: -8% 10% 0% 50%;
+  height: 107px;
+  width: 380px;
+}
+
+.container-writter {
+  padding: 7px;
 }
 
 textarea {
   border: 1px solid black;
-  height: 50px;
-  width: 300px;
+  height: 45px;
+  width: 355px;
 }
 
 hr {
