@@ -10,6 +10,17 @@
   background-color: #fff;
 }
 
+.btn:hover {
+  color: #fff;
+  background-color: #55abd5;
+}
+/* 
+.material-icons:hover {
+  color: #55abd5;
+  cursor: pointer;
+} */
+
+
 @media (min-width: 992px) {
   .hide {
     visibility: visible;

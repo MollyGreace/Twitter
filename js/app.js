@@ -7,6 +7,7 @@ $(document).ready(function() {
   var send = $('#send-twett');
   var containerPost = $('#container-post');
   var containerNewPost = $('.container-new-post');
+  var icons = $('.icons');
 
   //Evento del botón send
   $(send).on('click', function() {
@@ -20,26 +21,27 @@ $(document).ready(function() {
         '</div>' + 
         '<div class="col s9 l9">' +
           '<div class="row">' +
-            '<p class="black-text bolder">' + $('#name') +
-              '<p class="grey-text text-darken-2">' + nameUser + '</p>' +
+            '<p class="black-text" id="name">Molly Greace' +
+              '<p class="grey-text text-darken-2" id="name-user">@MollyGreace'+ '</p>' +
             '</p>' +
           '</div>';
-    var textTwett = '<div class="row">' + post + '</div>';
+    var hour = '<div clas="row">' + moment().format('LLL') + '</div>';
+    var textTwett = '<div class="row flow-text">' + post + '</div>';
     var buttons = 
       '<div class="row">' +
         '<span class="col s3">' +
-          '<i class="material-icons">comment</i>12</span>' +
+          '<i class="material-icons">comment</i>0</span>' +
         '<span class="col s3">' +
-          '<i class="material-icons">share</i>20</span>'+
+          '<i class="material-icons">share</i>0</span>'+
         '<span class="col s3">' +
-          '<i class="material-icons">favorite_border</i>22</span>' +
+          '<i class="material-icons">favorite_border</i>0</span>' +
         '<span class="col s3">' +
-         '<i class="material-icons">mail_outline</i>45</span>' +
+         '<i class="material-icons">mail_outline</i>0</span>' +
       '</div></div></div>';
     
     //creamos la condición
     if ($(textPost).val()) {
-      var containerNewPost = '<div class="section>' + line + infoUser + textTwett + buttons + '</div>';
+      var containerNewPost = '<div class="section>' + line + infoUser + hour + textTwett + buttons + '</div>';
 
       $(containerPost).prepend(containerNewPost);
       $(containerNewPost).before(line);
@@ -49,5 +51,11 @@ $(document).ready(function() {
     }
     
   });
+
+  // $(icons).on('click', function() {
+  //   //event.preventDefault();
+  //   $(this).attr('class', 'blue-text');
+  //   $('.number');
+  // });
   
 });

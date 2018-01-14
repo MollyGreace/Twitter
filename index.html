@@ -106,10 +106,10 @@
           <div class="col s4 l3">
             <img src="assets/images/user.png" alt="foto del usuario" class=" responsive-img">
           </div>
-          <div class="col s8 l9">
-            <input type="text" class="input col s10" data-lenght="140" id="text-post">
+          <div class="input-field  col s8 l9">
+            <textarea type="text" class="input col s10 materialize-textarea" data-lenght="140" id="text-post"></textarea>
             <button class="btn-floating blue lighten-1 left-align col s2" id="send-twett">
-              <i class="material-icons">send</i>
+              <i class="material-icons no-hover">send</i>
             </button>
           </div>
         </div>
@@ -133,20 +133,20 @@
               </div>
               <div class="col s9 l9">
                 <div class="row">
-                  <p class="black-text bolder">Gianmarco
+                  <p class="black-text">Gianmarco
                     <p class="grey-text text-darken-2">@gianmarcomusica</p>
                   </p>
                 </div>
                 <div class="row">que?!...Ya es viernes???</div>
                 <div class="row">
+                  <span class="col s3 number">
+                    <i class="material-icons icons">comment</i>12</span>
                   <span class="col s3">
-                    <i class="material-icons">comment</i>12</span>
+                    <i class="material-icons icons">share</i>20</span>
                   <span class="col s3">
-                    <i class="material-icons">share</i>20</span>
+                    <i class="material-icons icons">favorite_border</i>22</span>
                   <span class="col s3">
-                    <i class="material-icons">favorite_border</i>22</span>
-                  <span class="col s3">
-                    <i class="material-icons">mail_outline</i>45</span>
+                    <i class="material-icons icons">mail_outline</i>45</span>
                 </div>
               </div>
             </div>
@@ -269,6 +269,8 @@
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Enlace a Materialize compilado y minificado-->
   <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
+  <!-- Librería moment.js -->
+  <script type="text/javascript" src="vendors/moment/moment.js"></script>
   <!-- Enlace a archivo JavaScript externo -->
   <script type="text/javascript" src="js/app.js"></script>
 </body>
