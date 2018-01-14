@@ -1,0 +1,53 @@
+$(document).ready(function() {
+
+  //Elementos
+  var name = $('#name');
+  var nameUser = $('#name-user');
+  var textPost = $('#text-post');
+  var send = $('#send-twett');
+  var containerPost = $('#container-post');
+  var containerNewPost = $('.container-new-post');
+
+  //Evento del botón send
+  $(send).on('click', function() {
+    //creamos elementos nuevos
+    var post = $(textPost).val();
+    var line = '<div class="divider"></div>';
+    var infoUser = 
+      '<div class="row card">' +
+        '<div class="col s3 l3">' +
+          '<img src="assets/images/user.png" alt="foto del usuario" class="responsive-img">' +
+        '</div>' + 
+        '<div class="col s9 l9">' +
+          '<div class="row">' +
+            '<p class="black-text bolder">' + $('#name') +
+              '<p class="grey-text text-darken-2">' + nameUser + '</p>' +
+            '</p>' +
+          '</div>';
+    var textTwett = '<div class="row">' + post + '</div>';
+    var buttons = 
+      '<div class="row">' +
+        '<span class="col s3">' +
+          '<i class="material-icons">comment</i>12</span>' +
+        '<span class="col s3">' +
+          '<i class="material-icons">share</i>20</span>'+
+        '<span class="col s3">' +
+          '<i class="material-icons">favorite_border</i>22</span>' +
+        '<span class="col s3">' +
+         '<i class="material-icons">mail_outline</i>45</span>' +
+      '</div></div></div>';
+    
+    //creamos la condición
+    if ($(textPost).val()) {
+      var containerNewPost = '<div class="section>' + line + infoUser + textTwett + buttons + '</div>';
+
+      $(containerPost).prepend(containerNewPost);
+      $(containerNewPost).before(line);
+
+      $(textPost).val('');
+      $(textPost).focus();
+    }
+    
+  });
+  
+});

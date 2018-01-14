@@ -1,10 +1,17 @@
 /* HEADER */
-.logo-twitter {
+.logo-header {
   height: 1.5em;
+  top: 1em;
 }  
 
 .btn {
   border: 1px solid #55abd5;
   border-radius: 25px;
   background-color: #fff;
+}
+
+@media (min-width: 992px) {
+  .hide {
+    visibility: visible;
+  }
 }
