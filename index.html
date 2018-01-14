@@ -1,64 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <!--Import Google Icon Font-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Enlace a Materialize compilado y minificado-->
-   <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
-   <!-- Enlace a hoja de extilos externa -->
-   <link rel="stylesheet" href="css/main.css">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Enlace a Materialize compilado y minificado-->
+  <link rel="stylesheet" href="vendors/materialize/css/materialize.min.css">
+  <!-- Enlace a hoja de extilos externa -->
+  <link rel="stylesheet" href="css/main.css">
   <title>Twitter</title>
 </head>
-<body>
+
+<body class="green">
 
   <!--Header-->
   <header>
-      <nav class="nav-wrapper row white">
-            <ul class="left hide-on-med-and-down">
-              <li><a href="#"><i class="material-icons blue-text text-lighten-1">home</i></a></li>
-              <li><a href="#"><i class="material-icons grey-text">notifications_none</i></a></li>
-              <li><a href="#"><i class="material-icons grey-text">mail_outline</i></a></li>
-            </ul>            
-            <!-- <a href="#!" class="col l6"><img src="assets/images/twitter.png" alt="#" class="logo-twitter"></a> -->
-            <ul class="right">
-              <li><a href=""><i class="material-icons grey-text">search</i></a></li>
-              <li><a href=""><i class="material-icons">search</i></a></li>
-              <li><button class="btn blue lighten-1">Twittear</button></li>
-            </ul>
-        </nav>
+    <nav class="row nav-wrapper white">
+      <ul class="col s12 m1 l4 card-tabs left hide-on-med-and-down">
+        <li class="tab">
+          <a href="#">
+            <i class="material-icons blue-text text-lighten-1">home</i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons grey-text">notifications_none</i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="material-icons grey-text">mail_outline</i>
+          </a>
+        </li>
+      </ul>
+      <figure class="col m1 l4 center"></figure>
+      <!-- <a href="#!" class="col l6"><img src="assets/images/twitter.png" alt="#" class="logo-twitter"></a> -->
+      <ul class="col m1 l3 right">
+        <li>
+          <a href="">
+            <i class="material-icons grey-text">search</i>
+          </a>
+        </li>
+        <li>
+          <button class="btn blue lighten-1">Twittear</button>
+        </li>
+      </ul>
+    </nav>
   </header>
   <!--Fin Header-->
 
   <!--Board-->
-  <section class="row">
-    <div class="col s12 m4 l3 card white">
-        <div class="card-image card large">
-            <img src="assets/images/portada.jpg">
-            <span class="card-title black center-align">Andrés Val</span>
-            <div class="card-tabs">
-              <ul class="tabs  blue-text" style="overflow-x:hidden">
-                <li class="tab col s4"><a href="#1">Twets</a></li>
-                <li class="tab col s5"><a class="active" href="#2">Siguiendo</a></li>
-                <li class="tab col s6"><a href="#3">Seguidores</a></li>
-              </ul>
-            </div>
+  <section class="">
+    <div class="row">
 
+      <!-- Sección Usuario -->
+      <div class="col s12 m4 l2 offset-l1 card white">
+        
+        <div class="section">
+          <div class="row">
+            <img src="assets/images/user.png" alt="usuario" class="col s4 m5 l2">
+            <div class="col s8 m7 l10">
+              <h5>Molly Greace</h5>
+              <h6>@MollyGreace</h6>
+            </div>
           </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <ul class="row">
+            <li class="col s3">
+              <p href="#1" class="grey-text text-darken-1">Twets</p>
+              <h5 class="blue-text text-lighten-1">60</h5>
+            </li>
+            <li class="col s4">
+              <p href="#2" class="grey-text text-darken-1">Siguiendo</p>
+              <h5 class="blue-text text-lighten-1">80</h5>
+            </li>
+            <li class="col s4">
+              <p href="#3" class="grey-text text-darken-1">Seguidores</p>
+              <h5 class="blue-text text-lighten-1">30</h5>
+            </li>
+          </ul>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section"></div>
+      </div>
+
+      <!-- Sección posteos -->
+      <div class="card col s12 m4 l4 offset-l1">
+        <div class="row card">
+          <div class="col s4">
+            <img src="assets/images/user.png" alt="foto del usuario" class=" responsive-img">
+          </div>
+          <div class="col s7">
+            <input type="text" class="input col s10" data-lenght="140">
+            <button class="btn-floating blue lighten-1">
+              <i class="material-icons">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section">
+        <div class="row">
+          <h5 class="col s10 m10 l7">Por si te lo perdiste</h5>
+          <span class="col s2 m2 l5">
+            <i class="material-icons">keyboard_arrow_down</i>
+          </span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="row card">
+            <div class="col s3 l3">
+              <img src="assets/images/us1.png" alt="foto del usuario" class="responsive-img">
+            </div>
+            <div class="col s9 l9">
+              <div class="row">
+                <p class="black-text bolder">Gianmarco
+                  <p class="grey-text text-darken-2">@gianmarcomusica</p>
+                </p>
+              </div>
+              <div class="row">que?!...Ya es viernes???</div>
+              <div class="row">
+                <span class="col s3">
+                  <i class="material-icons">comment</i>12</span>
+                <span class="col s3">
+                  <i class="material-icons">share</i>20</span>
+                <span class="col s3">
+                  <i class="material-icons">favorite_border</i>22</span>
+                <span class="col s3">
+                  <i class="material-icons">mail_outline</i>45</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="row card">
+            <div class="col s3 l3">
+              <img src="assets/images/us1.png" alt="foto del usuario" class="responsive-img">
+            </div>
+            <div class="col s9 l9">
+              <div class="row">
+                <p>Gianmarco @gianmarcomusica</p>
+              </div>
+              <div class="row">que?!...Ya es viernes???</div>
+              <div class="row">
+                <span class="col s3">
+                  <i class="material-icons">comment</i>12</span>
+                <span class="col s3">
+                  <i class="material-icons">share</i>20</span>
+                <span class="col s3">
+                  <i class="material-icons">favorite_border</i>22</span>
+                <span class="col s3">
+                  <i class="material-icons">mail_outline</i>45</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="section">
+          <div class="row card">
+            <div class="col s3 l3">
+              <img src="assets/images/us1.png" alt="foto del usuario" class="responsive-img">
+            </div>
+            <div class="col s9 l9">
+              <div class="row">
+                <p>Gianmarco @gianmarcomusica</p>
+              </div>
+              <div class="row">que?!...Ya es viernes???</div>
+              <div class="row">
+                <span class="col s3">
+                  <i class="material-icons">comment</i>12</span>
+                <span class="col s3">
+                  <i class="material-icons">share</i>20</span>
+                <span class="col s3">
+                  <i class="material-icons">favorite_border</i>22</span>
+                <span class="col s3">
+                  <i class="material-icons">mail_outline</i>45</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col s12 m8 l6 card-panel white"></div>
-    <div class="col l3 card-panel white"></div>
+
+    <!-- Sección Novedades-->
+    <div class="col s12 m4 l2 offset-l1 card-panel white">
+      <div class="section">
+        <div class="row card">
+          <div class="col s3 l3">
+            <img src="assets/images/us1.png" alt="foto del usuario" class="responsive-img">
+          </div>
+          <div class="col s9 l9">
+            <div class="row">
+              <p>RPP @rppperu</p>
+            </div>
+            <div class="row">
+              <button class="btn black-text">Seguir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row card">
+          <div class="col s3 l3">
+            <img src="assets/images/us1.png" alt="foto del usuario" class="responsive-img">
+          </div>
+          <div class="col s9 l9">
+            <div class="row">
+              <p>RPP @rppperu</p>
+            </div>
+            <div class="row">
+              <button class="btn black-text">Seguir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="section">
+        <div class="row card">
+          <div class="col s3 l3">
+            <img src="assets/images/us1.png" alt="foto del usuario" class="responsive-img">
+          </div>
+          <div class="col s9 l9">
+            <div class="row">
+              <p>RPP @rppperu</p>
+            </div>
+            <div class="row">
+              <button class="btn black-text">Seguir</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Espacio lateral derecho-->
+    <div class="col l1"></div>
+    </div>
+
   </section>
+
   <!--Board-->
-   
+
 
   <!-- Enlace a jQuery compilado y minificado-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Enlace a Materialize compilado y minificado-->
   <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
   <!-- Enlace a archivo JavaScript externo -->
-  <script type="text/javascript" src="js/app.js"></script>  
+  <script type="text/javascript" src="js/app.js"></script>
 </body>
+
 </html>

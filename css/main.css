@@ -1,8 +1,10 @@
 /* HEADER */
 .logo-twitter {
   height: 1.5em;
-}
+}  
 
-.card-image {
-  width: auto;
+.btn {
+  border: 1px solid #55abd5;
+  border-radius: 25px;
+  background-color: #fff;
 }
