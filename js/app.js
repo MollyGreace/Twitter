@@ -26,7 +26,7 @@ $(document).ready(function() {
             '</p>' +
           '</div>';
     var hour = '<div clas="row">' + moment().format('LLL') + '</div>';
-    var textTwett = '<div class="row flow-text">' + post + '</div>';
+    var textTwett = '<div class="flow-text">' + post + '</div>';
     var buttons = 
       '<div class="row">' +
         '<span class="col s3">' +
