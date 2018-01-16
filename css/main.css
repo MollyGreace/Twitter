@@ -20,11 +20,16 @@ body {
   color: #fff;
   background-color: #55abd5;
 }
-/* 
+
 .material-icons:hover {
   color: #55abd5;
   cursor: pointer;
-} */
+}
+
+.text-post {  
+  white-space: normal;
+  text-overflow: ellipsis;
+}
 
 
 @media (min-width: 992px) {
