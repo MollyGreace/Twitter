@@ -10,6 +10,10 @@ Réplica de interfaz de Twitter
 * En el evento, obtener el texto.
 * Agregar el texto al HTML.
 
-## Author
+## Lo nuevo
+ 
+Se  realizó con `html` `css` `materialize` `Responsibe web design`
 
-Molly Siesquén;
+## Author
+ 
+Molly Siesquén
